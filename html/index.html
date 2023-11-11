@@ -33,14 +33,14 @@
    <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><iframe src="https://giphy.com/embed/Ierkq3VyOpH0cCvwPQ" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+         <div class="loader"><iframe src="https://giphy.com/embed/Ierkq3VyOpH0cCvwPQ" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
       </div>
       <!-- end loader -->
       <!-- header -->
       <header>
          <!-- header post-->
          <div class="banner">
-           <p> banner</p>
+           <img src="images/banner.jpeg" alt="#">
          </div>
          <!-- header inner -->
          <div class="header">
@@ -110,7 +110,8 @@
       <!-- end header -->
       <!-- banner -->
       <section class="banner_main">
-         <div id="banner1" class="carousel slide" data-ride="carousel">
+         <div class="adds_news">
+            <div id="banner1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                <li data-target="#banner1" data-slide-to="0" class="active"></li>
                <li data-target="#banner1" data-slide-to="1"></li>
@@ -131,7 +132,7 @@
                <div class="carousel-item">
                   <div class="container">
                      <div class="carousel-caption">
-                        <div class="text-bg">
+                        <div id="padel_rosa" class="text-bg">
                            <h1> <span class="pink">Padel Rosa 🎾🥇</span></h1>
                            <figure class="news_img"><img src="images/padelRosa.webp" alt="#"/></figure>
                            <a class="read_more" href="padelRosaNoticia.html">Ir</a>
@@ -157,6 +158,18 @@
             <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </a>
+            </div>
+            <div class="add">
+               <div class="texto-add">
+                  <p>Algunos de nuestros embajadores:</p>
+               </div>
+               <div class="add_banner">
+                  <figure><a href="https://www.instagram.com/aleo.vzla/" target="_blank"><img src="images/aleo.gif" alt="#"></iframe></a></figure>
+               </div>
+               <div class="add_banner">
+                  <figure><a href="https://www.instagram.com/rmk_store/" target="_blank"><img src="images/rmk.gif" alt="#"></iframe></a></figure>
+               </div>
+            </div>
          </div>
       </section>
       <!-- end banner -->
@@ -166,15 +179,15 @@
             <div class="row d_flex">
                <div class="col-md-5">
                   <div class="about_img">
-                     <figure><img src="images/about_img.png" alt="#"/></figure>
+                     <figure><img src="images/add1.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-7">
                   <div class="titlepage">
-                     <h2>About Our Shop</h2>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                     <h2>Nuestra Tienda</h2>
+                     <p>description</p>
                   </div>
-                  <a class="read_more" href="#">Read More</a>
+                  <a class="read_more" href="shop.html">Tienda</a>
                </div>
             </div>
          </div>
@@ -432,6 +445,12 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script>
+         window.addEventListener('scroll', function() {
+         var nav = document.querySelector('nav');
+         nav.classList.toggle('sticky', window.scrollY > 0);
+         });
+      </script>
       <script>
          // This example adds a marker to indicate the position of Bondi Beach in Sydney,
          // Australia.
