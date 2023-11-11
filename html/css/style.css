@@ -430,7 +430,7 @@ button {
 
 .titlepage h2 {
      font-size: 35px;
-     color: #fff;
+     color: #212529;
      line-height: 45px;
      font-weight: bold;
      padding: 0;
@@ -522,7 +522,7 @@ button {
 /** Our  Glasses section **/
 
 .glasses {
-     background: #fff;
+     background: #fff6f6;
      margin-top: 90px;
 }
 
@@ -872,11 +872,52 @@ ul.location_icon li a {
 .position_head .glasses,
 .shop {
      margin-bottom: 90px;
+     margin-top: 5px;
 }
-nav {
-     position: fixed;
-     top: 0;
-     width: 100%;
-     background-color: #fff;
-     z-index: 999;
-   }
+
+.link_ss {
+     color:#DA0C81;
+}
+
+.carrito {
+     background-color:#fff6f6 ;
+}
+
+.lista-productos {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+
+.lista-productos li {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 10px;
+}
+
+.total {
+     font-weight: bold;
+     text-align: right;
+     margin-top: 10px;
+}
+
+.vaciar-carrito {
+     display: block;
+     margin: 10px auto 0;
+     padding: 10px;
+     background-color: #dc3545;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+.titulo_carrito {
+     display: flex;
+     width: 25%;
+     height: auto;
+}
+
+
+
