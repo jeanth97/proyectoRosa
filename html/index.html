@@ -62,7 +62,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
@@ -83,7 +83,7 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="glasses.html">Album de fotos</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="shop.html">Tienda</a>
                               </li>
                               <li class="nav-item">
@@ -95,8 +95,25 @@
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#">Registrarse</a>
                               </li>
-                              <li class="nav-item d_none sea_icon">
-                                 <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
+                              <li class="car" >
+                                <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                  <div id="carrito" class="dropdown-menu">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                  
+                                    <a href="#" id="vaciar-carrito" class="button-vaciar">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="button-pedido">Procesar Compra</a>
                               </li>
                            </ul>
                         </div>
@@ -122,7 +139,7 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
-                           <h1> <span class="pink">DESFILE DE MODAS ROSA 2023 💕</span></h1>
+                           <h1> <img src="https://i.imgur.com/qYFP2fD.png" border="0">💕</h1>
                            <figure class="news_img"><img src="images/desfile.heic" alt="#"/></figure>
                            <a class="read_more" href="desfileNoticia.html">Ir</a>
                         </div>
@@ -133,7 +150,7 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div id="padel_rosa" class="text-bg">
-                           <h1> <span class="pink">Padel Rosa 🎾🥇</span></h1>
+                           <h1> <img src="https://i.imgur.com/qpXhIRi.png" border="0">🎾🥇</h1>
                            <figure class="news_img"><img src="images/padelRosa.webp" alt="#"/></figure>
                            <a class="read_more" href="padelRosaNoticia.html">Ir</a>
                         </div>
@@ -144,7 +161,7 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
-                           <h1> <span class="pink">AUTOMAQUILLAJE BÁSICO💄✨</span></h1>
+                           <h1> <span class="pink"><img src="https://i.imgur.com/KSacJa4.png" border="0">💄✨</h1>
                            <figure class="news_img"><img src="images/CursoMaquillaje.jpg" alt="#"/></figure>
                            <a class="read_more" href="cursoMaquillajeNoticia.html">Ir</a>
                         </div>
@@ -185,7 +202,7 @@
                <div class="col-md-7">
                   <div class="titlepage">
                      <h2>Nuestra Tienda</h2>
-                     <p>description</p>
+                     <p>En nuestra tienda encontraras una variedad de productos que, con la compra de alguno de ellos, estaras contribuyendo al pago de tratamientos para pacientes oncologicas. Algunos de estos productos son fabricados por las propias pacientes en nuestro programa <a href="ss.html"><span class="link_ss">Suenos de Supervivientes</span></a></p>
                   </div>
                   <a class="read_more" href="shop.html">Tienda</a>
                </div>
@@ -197,76 +214,73 @@
       <div class="glasses">
          <div class="container">
             <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="titlepage">
-                     <h2>Our Glasses</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor
-                        e et dolore magna aliqua. Ut enim ad minim veniam, qui
-                     </p>
+               <div class="container-productos" id="lista-productos">
+
+                  <div class="card">
+                    <img src="assets/img/ropa1.jpeg" class="card-img">
+                    <h5>Ropa Hello Kitty</h5>
+                    <p>SKU: ROP0000074</p>
+                    <p>S/.<small class="precio">18</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="1">Comprar</a>
                   </div>
-               </div>
-            </div>
-         </div>
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="glasses_box">
-                     <figure><img src="images/glass1.png" alt="#"/></figure>
-                     <h3><span class="blu">$</span>50</h3>
-                     <p>Sunglasses</p>
+                  <div class="card">
+                    <img src="assets/img/juguete1.png" class="card-img">
+                    <h5>Pelota Soga Nudo Grande Colores</h5>
+                    <p>SKU: JUG0000005</p>
+                    <p>S/.<small class="precio">14</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="2">Comprar</a>
                   </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="glasses_box">
-                     <figure><img src="images/glass2.png" alt="#"/></figure>
-                     <h3><span class="blu">$</span>50</h3>
-                     <p>Sunglasses</p>
+                  <div class="card">
+                    <img src="assets/img/alimento1.webp" class="card-img">
+                    <h5>Pack Yogy Helado para perros 100% Natural 100g de Barker</h5>
+                    <p>SKU: BPY4UND</p>
+                    <p>S/.<small class="precio">24</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="3">Comprar</a>
                   </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="glasses_box">
-                     <figure><img src="images/glass3.png" alt="#"/></figure>
-                     <h3><span class="blu">$</span>50</h3>
-                     <p>Sunglasses</p>
+        
+                  <div class="card">
+                    <img src="assets/img/alimento2.webp" class="card-img">
+                    <h5>Dingo Dental Mini Bones 7und x70gr</h5>
+                    <p>SKU: DDMB7U70GR</p>
+                    <p>S/.<small class="precio">26</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="4">Comprar</a>
                   </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="glasses_box">
-                     <figure><img src="images/glass4.png" alt="#"/></figure>
-                     <h3><span class="blu">$</span>50</h3>
-                     <p>Sunglasses</p>
+                  <div class="card">
+                    <img src="assets/img/juguete3.webp" class="card-img">
+                    <h5>Hartz - Duraplay Ball Medium</h5>
+                    <p>SKU: HDB04</p>
+                    <p>S/.<small class="precio">35</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="5">Comprar</a>
                   </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="glasses_box">
-                     <figure><img src="images/glass5.png" alt="#"/></figure>
-                     <h3><span class="blu">$</span>50</h3>
-                     <p>Sunglasses</p>
+                  <div class="card">
+                    <img src="assets/img/ropa2.jpeg" class="card-img">
+                    <h5>Ropa Avengers</h5>
+                    <p>SKU: ROP0000023</p>
+                    <p>S/.<small class="precio">21</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="6">Comprar</a>
                   </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="glasses_box">
-                     <figure><img src="images/glass6.png" alt="#"/></figure>
-                     <h3><span class="blu">$</span>50</h3>
-                     <p>Sunglasses</p>
+        
+                  <div class="card">
+                    <img src="assets/img/juguete2.webp" class="card-img">
+                    <h5>Animal Planet Juguete P/Mascota Medium</h5>
+                    <p>SKU: AP-D794-011</p>
+                    <p>S/.<small class="precio">29</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="7">Comprar</a>
                   </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="glasses_box">
-                     <figure><img src="images/glass7.png" alt="#"/></figure>
-                     <h3><span class="blu">$</span>50</h3>
-                     <p>Sunglasses</p>
+                  <div class="card">
+                    <img src="assets/img/ropa3.webp" class="card-img">
+                    <h5>Hoodie Hotdogz Mr. Charlie</h5>
+                    <p>SKU: HTD-TSH023-1</p>
+                    <p>S/.<small class="precio">90</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="8">Comprar</a>
                   </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="glasses_box">
-                     <figure><img src="images/glass8.png" alt="#"/></figure>
-                     <h3><span class="blu">$</span>50</h3>
-                     <p>Sunglasses</p>
+                  <div class="card">
+                    <img src="assets/img/alimento3.webp" class="card-img">
+                    <h5>Hills PD Metabolic Treats</h5>
+                    <p>SKU: HPDMT</p>
+                    <p>S/.<small class="precio">45</small></p>
+                    <a href="#" class="button agregar-carrito" data-id="9">Comprar</a>
                   </div>
-               </div>
-               <div class="col-md-12">
-                  <a class="read_more" href="#">Read More</a>
                </div>
             </div>
          </div>
@@ -445,12 +459,14 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
-      <script>
-         window.addEventListener('scroll', function() {
-         var nav = document.querySelector('nav');
-         nav.classList.toggle('sticky', window.scrollY > 0);
-         });
-      </script>
+      <!-- carrito script-->
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+      <script  src="js/scripts.js"></script>
+      <script src="js/carrito.js"></script>
+      <script src="js/pedido.js"></script>
+      <script src="js/compra.js"></script>
       <script>
          // This example adds a marker to indicate the position of Bondi Beach in Sydney,
          // Australia.
