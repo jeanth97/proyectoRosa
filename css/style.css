@@ -684,8 +684,17 @@ button {
 
 /** clients section **/
 
-.clients {
-     padding: 90px 0 70px 0;
+.clients .col-md-12{
+     display: flex;
+     justify-content: center;
+}
+
+.clients .col-md-12 img{
+     border-radius: 100%;
+     border: 10px;
+     border-color: #AEDEFC;
+     width: 1000px;
+     padding-top:30px;
 }
 
 .clients .titlepage {
@@ -698,10 +707,12 @@ button {
      font-size: 17px;
      line-height: 29px;
      padding-top: 10px;
+     float: left;
+     clear: both;
+     
 }
 
 .clients_box h3 {
-     color: #2a2a2c;
      font-size: 26px;
      line-height: 30px;
      padding-top: 23px;
@@ -709,7 +720,7 @@ button {
 }
 
 .clients_box p {
-     color: #2a2a2c;
+     color: #fff;
      font-size: 17px;
      line-height: 30px;
 }
@@ -720,11 +731,14 @@ button {
 }
 
 .clients_box {
-     border: #606060 solid 1px;
+     background-color: #F875AA;
      padding: 40px 32px 40px 0px;
      float: left;
      text-align: left;
      margin-left: 89px;
+     border-radius: 30px;
+     border: #00000030 solid;
+     box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .clients_box figure {
