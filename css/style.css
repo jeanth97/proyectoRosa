@@ -428,6 +428,10 @@ button {
      height: auto;
 }
 
+.car {
+     margin-left: 110px;
+}
+
 /** end banner section **/
 
 .titlepage h2 {
