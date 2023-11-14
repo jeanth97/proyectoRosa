@@ -734,12 +734,14 @@ button {
      line-height: 30px;
      padding-top: 23px;
      font-weight: 600;
+     padding-left: 30px;
 }
 
 .clients_box p {
      color: #fff;
      font-size: 17px;
      line-height: 30px;
+     padding-left: 30px;
 }
 
 .clients_Carousel .carousel-caption {
